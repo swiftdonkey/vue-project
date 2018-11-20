@@ -1,33 +1,3 @@
-跨域问题解决方案 设置请求头为接收所有请求
- res.setHeader("Access-Control-Allow-Origin", "*");
-				res.setHeader("Allow", "*");
-
-
-
-
-请求方式 get 请求图片地址
-http://127.0.0.1:5000/swipePic
-返回json字符串
-{
-	"status":0,   																		------------------------状态值为0成功1失败
-	"message":[
-		{
-		"url":"https://www.baidu.com/",   												------------------------- 跳转地址
-		"img":" http://127.0.0.1:5000/public/images/1.jpg"								--------------------------图片地址
-		},
-		{
-			"url":"https://www.taobao.com/",
-			"img":" http://127.0.0.1:5000/public/images/2.jpg"
-		},
-		{
-			"url":"https://www.weibo.com/",
-			"img":" http://127.0.0.1:5000/public/images/3.jpg"
-		}
-	]	
-}
-
-请求方式get 请求新闻列表
-http://127.0.0.1:5000/newsList
 {
 	"status": 0,
 	"message": [{
@@ -58,21 +28,5 @@ http://127.0.0.1:5000/newsList
 
 
 
-	]
-}
-请求方式get 请求新闻列表
-http://127.0.0.1:5000/newsComment/:artid?pageindex=1
-{
-	"status":0,
-	"message":[
-		{
-			"id":1,
-			"title":"",
-			"click":"",
-			"add_time":"",
-			"content":""                -------带html标签
-		}
-		
-		
 	]
 }

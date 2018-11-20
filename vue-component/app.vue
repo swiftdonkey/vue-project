@@ -1,7 +1,7 @@
 <template>
 <div class="app-container">
 	<mt-header fixed title="黑马程序员"></mt-header>
-	<transition>
+	<transition >
 	<router-view></router-view>
 	</transition>
 	
@@ -32,12 +32,13 @@
 <style>
 	.app-container{
 		padding-top: 40px;
+		padding-bottom: 50px;
 		overflow-x:hidden ;
 	}
 	.v-enter{
 		opacity: 0;
 		transform: translateX(100%);
-	/* 	position: absolute; */
+
 	}
 	.v-leave-to{
 		transform: translateX(-100%);
